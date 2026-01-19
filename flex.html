@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border: 2px solid red;
+            height: 400px;
+            width: 100vw;
+            display: flex;
+            justify-content: baseline; 
+            justify-content: center;
+            justify-content: end;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            align-items: center;
+             align-items: end;
+
+        }
+        #parent div{
+            height: 100px;
+            width: 100px;
+        }
+        #parent div:nth-of-type(1){
+            background-color: darksalmon;
+        }
+         #parent div:nth-of-type(2){
+            background-color: blue;
+         }   
+          #parent div:nth-of-type(3){
+            background-color: blueviolet;
+          }
+           #parent div:nth-of-type(4){
+            background-color: beige;
+           }
+         </style>
+</head>
+<body>
+    <h2>flexbox</h2>
+    <div id="parent">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            border: 2px solid black;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            cursor: pointer;
+            
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            color: white;
+           
+        }
+        #child{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div>
+            <a>Home</a>
+        </div>
+        <div id="child">
+            <a>Contact</a>
+            <a>Public</a>
+            <a>About</a>
+        </div>
+        <div>
+            <a>
+                <button>log out</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
