@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bouncing Ball</title>
+<style>
+/* body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+} */
+
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background: rgba(59, 18, 70, 0.402);
+    border-radius: 50%;
+    /* position: absolute;
+    bottom: 0; */
+    background: linear-gradient(pink,red);
+    animation-name: new;
+    animation-duration:1s ;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+   animation-timing-function: ease-in;
+   animation-name: bounce;
+   margin: 10px auto;
+}
+@keyframes bounce {
+    0% {
+        /* bottom: 0; */
+        transform: translateY(0px);
+    }
+    100% {
+        /* bottom: 640px; */
+        transform: translateY(85vh) rotate(360deg);
+    }
+}
+</style>
+</head>
+<body>
+
+    <div  class="ball"></div>
+
+
+</body>
+</html>
